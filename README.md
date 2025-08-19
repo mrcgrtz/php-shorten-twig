@@ -52,7 +52,7 @@ Output:
 Safely truncate text or HTML markup using the [`marcgoertz/shorten`](https://github.com/mrcgrtz/php-shorten) library.
 
 ```twig
-shorten(length = 100, suffix = '…', wordsafe = false)
+shorten(length = 100, suffix = '…', appendixInside = false, wordsafe = false, delimiter = ' ')
 ```
 
 #### Parameters

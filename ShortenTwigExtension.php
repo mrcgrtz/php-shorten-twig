@@ -35,8 +35,14 @@ class ShortenTwigExtension extends AbstractExtension
      * @param string $delimiter The delimiter for words (default: `' '`)
      * @return string The shortened text or markup
      */
-    public function shorten(string $markup, int $length = 400, string $suffix = '…', bool $appendixInside = false, bool $wordsafe = false, string $delimiter = ' '): string
-    {
+    public function shorten(
+        string $markup,
+        int $length = 400,
+        string $suffix = '…',
+        bool $appendixInside = false,
+        bool $wordsafe = false,
+        string $delimiter = ' '
+    ): string {
         return $this->shorten->truncateMarkup($markup, $length, $suffix, $appendixInside, $wordsafe, $delimiter);
     }
 }
